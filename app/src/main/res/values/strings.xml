@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Backend-driven Menu</string>
+    <string name="address">Carrer de Vicente Barrera Cambra, 6</string>
+    <string name="about">Acerca de</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_title">Desarrollado por</string>
+    <string name="visit_web">Visitar Web</string>
+</resources>
