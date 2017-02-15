@@ -46,8 +46,7 @@ public class AppController extends MultiDexApplication {
             String url = BuildConfig.URL_REQUEST;
             String user = BuildConfig.USER;
             String password = BuildConfig.PASSWORD;
-//            final long lastModified = new GLastModified(url, user, password).getMillis();
-            final long lastModified = new GLastModified(url).getMillis();
+            final long lastModified = new GLastModified(url, user, password).getMillis();
             if (lastModified > dataManager.getLastModified()) {
                 Map<String, Object> params = new HashMap<>();
                 RequestManager.getInstance().doRequest(user, password, this, Keys.REQUEST_TAG_URL_BASE, url,

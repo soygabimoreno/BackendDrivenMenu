@@ -1,5 +1,7 @@
 package com.gabrielmorenoibarra.android.backenddrivenmenu;
 
+import android.util.Base64;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
@@ -76,7 +78,7 @@ public class CustomRequest extends Request<JSONObject> {
     @Override
     public Map<String, String> getHeaders() throws AuthFailureError {
         Map<String, String> headers = new HashMap<>();
-//        headers.put("Authorization", "Basic " + Base64.encodeToString((user + ":" + password).getBytes(), Base64.NO_WRAP));
+        headers.put("Authorization", "Basic " + Base64.encodeToString((user + ":" + password).getBytes(), Base64.NO_WRAP));
         return headers;
     }
 
